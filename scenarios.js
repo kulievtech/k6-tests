@@ -7,9 +7,6 @@ export default function () {
   // Good practice to check the response status and content to ensure the test is working as expected
   check(res, {
     "is status 200": (r) => r.status === 200,
-  });
-
-  check(res, {
     "page is startpage": (r) => r.body.includes("Public pages"),
   });
 }
